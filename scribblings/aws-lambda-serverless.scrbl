@@ -14,7 +14,7 @@ Install serverless framework.
 See @url{"https://serverless.com/"}
 
 @section{Install}
-@code{raco pkg install https://github.com/tojoqk/aws-lambda-serverless.git}
+@codeblock{raco pkg install https://github.com/tojoqk/aws-lambda-serverless.git}
 
 @section{Usage}
 

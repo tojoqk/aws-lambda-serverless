@@ -17,7 +17,9 @@ Install serverless framework. See
 
 ## 2. Install
 
-`raco` `pkg` `install` `https://github.com/tojoqk/aws-lambda-serverless.git`
+```racket
+raco pkg install https://github.com/tojoqk/aws-lambda-serverless.git
+```
 
 ## 3. Usage
 
