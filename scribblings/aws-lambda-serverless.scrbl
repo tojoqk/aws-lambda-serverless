@@ -28,3 +28,5 @@ Next, build bootstrap file as follows.
 
 Finally, deploy to aws lambda.
 @codeblock{sls deploy}
+
+See /examples for details.

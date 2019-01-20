@@ -39,3 +39,5 @@ Finally, deploy to aws lambda.
 ```racket
 sls deploy
 ```
+
+See /examples for details.
