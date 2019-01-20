@@ -11,7 +11,7 @@ Racket on aws lambda with serverless framework.
 
 @section{Requirement}
 Install serverless framework.
-See @url{"https://serverless.com/"}
+See @url{https://serverless.com/}
 
 @section{Install}
 @codeblock{raco pkg install https://github.com/tojoqk/aws-lambda-serverless.git}

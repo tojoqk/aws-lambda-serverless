@@ -13,7 +13,7 @@ Racket on aws lambda with serverless framework.
 ## 1. Requirement
 
 Install serverless framework. See
-["https://serverless.com/"]("https://serverless.com/")
+[https://serverless.com/](https://serverless.com/)
 
 ## 2. Install
 
