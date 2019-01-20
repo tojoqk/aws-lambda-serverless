@@ -7,4 +7,26 @@
 
 @defmodule[aws-lambda-serverless]
 
-Package Description Here
+Racket on aws lambda with serverless framework.
+
+@section{Requirement}
+Install serverless framework.
+See @url{https://serverless.com/}
+
+@section{Install}
+@codeblock{raco pkg install https://github.com/tojoqk/aws-lambda-serverless.git}
+
+@section{Usage}
+
+First, add `#lang aws-lambda-serverless` to your serverless.yml and use @code{arn:aws:lambda:us-east-1:488514468674:layer:bootstrap:2} (@url{https://github.com/tojoqk/aws-lambda-bootstrap-runtime.git}) layer.
+
+Next, build bootstrap file as follows.
+
+@codeblock{
+  raco exe --orig-exe -o bootstrap serverless.yml
+}
+
+Finally, deploy to aws lambda.
+@codeblock{sls deploy}
+
+See /examples for details.
