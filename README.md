@@ -15,7 +15,6 @@ raco pkg install https://github.com/tojoqk/aws-lambda-serverless.git
 ```
 
 ## 3. Usage
-
 Firsft, add `#lang aws-lambda-serverless` to your serverless.yml and
 use `arn:aws:lambda:us-east-1:488514468674:layer:bootstrap:2`
 \([https://github.com/tojoqk/aws-lambda-bootstrap-runtime.git](https://github.com/tojoqk/aws-lambda-bootstrap-runtime.git)\)
