@@ -17,8 +17,9 @@ Install serverless framework. See
 
 ## 2. Install
 
-“‘ raco pkg install https://github.com/tojoqk/aws-lambda-serverless.git
-““
+`raco` `pkg` `install` `https://github.com/tojoqk/aws-lambda-serverless.git`
+
+## 3. Usage
 
 First, add ‘\#lang aws-lambda-serverless‘ to your serverless.yml and use
 `arn:aws:lambda:us-east-1:488514468674:layer:bootstrap:2`
