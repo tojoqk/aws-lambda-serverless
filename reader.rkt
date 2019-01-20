@@ -8,7 +8,6 @@
 (provide (rename-out [serverless-read read]
                      [serverless-read-syntax read-syntax]))
 
-
 (define (serverless-read in)
   (syntax->datum (serverless-read-syntax #f in)))
 
