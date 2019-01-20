@@ -14,7 +14,7 @@
 (define (serverless-read-syntax src in)
   (let ([yaml (read-yaml in)])
     (strip-context
-     #`(module aws-lambda-serverless-mod "expander.rkt"
+     #`(module aws-lambda-serverless-mod aws-lambda-serverless/expander
          (HANDLERS
           #,@(datum->syntax
               #f
