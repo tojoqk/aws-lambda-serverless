@@ -18,7 +18,7 @@ See @url{https://serverless.com/}
 
 @section{Usage}
 
-First, add `#lang aws-lambda-serverless` to your serverless.yml and use @code{arn:aws:lambda:us-east-1:488514468674:layer:bootstrap:2} (@url{https://github.com/tojoqk/aws-lambda-bootstrap-runtime.git}) layer.
+First, add @racket{#lang aws-lambda-serverless} to your serverless.yml and use @code{arn:aws:lambda:us-east-1:488514468674:layer:bootstrap:2} (@url{https://github.com/tojoqk/aws-lambda-bootstrap-runtime.git}) layer.
 
 Next, build bootstrap file as follows.
 
