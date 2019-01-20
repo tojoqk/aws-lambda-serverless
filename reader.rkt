@@ -42,12 +42,9 @@ functions:
     handler: handler.hello
     layers:
       - arn:aws:lambda:us-east-1:488514468674:layer:bootstrapTest:2
-  world:
-    handler: handler.world
     layers:
       - arn:aws:lambda:us-east-1:488514468674:layer:bootstrapTest:2
 END
                                                     ))
-                `(module aws-lambda-serverless-mod "expander.rkt"
-                   (HANDLERS (handler.hello "handler.rkt" hello)
-                             (handler.world "handler.rkt" world)))))
+                `(module aws-lambda-serverless-mod aws-lambda-serverless/expander
+                   (HANDLERS (handler.hello "handler.rkt" hello)))))
