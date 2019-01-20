@@ -7,4 +7,9 @@
 
 @defmodule[aws-lambda-serverless]
 
-Package Description Here
+Racket on serverless framework with aws
+
+@section{Usage}
+
+See /examples.
+
