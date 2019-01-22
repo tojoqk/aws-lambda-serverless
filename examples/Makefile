@@ -1,4 +1,4 @@
-bootstrap:	handler.rkt serverless.yml
+bootstrap: handler.rkt serverless.yml
 	raco exe --orig-exe -o bootstrap serverless.yml
 
 .PHONY: deploy clean
