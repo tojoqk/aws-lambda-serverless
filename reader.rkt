@@ -1,6 +1,9 @@
-#lang racket
-(require syntax/strip-context)
-(require yaml)
+#lang racket/base
+(require syntax/strip-context
+         racket/list
+         racket/match
+         racket/string
+         yaml)
 
 (module+ test
   (require rackunit))
