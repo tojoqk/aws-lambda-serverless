@@ -1,5 +1,8 @@
-#lang racket
-(require aws
+#lang racket/base
+(require racket/contract
+         racket/match
+         racket/function
+         racket/string
          json
          net/http-client)
 
@@ -46,10 +49,7 @@
                                               (hash 'errorMessage (format "Uncaught exception ~a" e)
                                                     'errorType "UncaughtException")))
                        (raise e))])
-      (define response
-        (parameterize ([public-key (getenv "AWS_ACCESS_KEY_ID")]
-                       [private-key (getenv "AWS_SECRET_ACCESS_KEY")])
-          (function event-data)))
+      (define response (function event-data))
       (http-sendrecv endpoint response-path
                      #:port port
                      #:method "POST"
