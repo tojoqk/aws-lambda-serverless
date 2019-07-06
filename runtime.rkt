@@ -6,7 +6,7 @@
          json
          net/http-client)
 
-(provide/contract [runtime (-> (-> jsexpr? (or/c string? bytes? data-procedure/c))
+(provide/contract [runtime (-> (-> jsexpr? jsexpr?)
                                void?)])
 
 (define (endpoint&port)
@@ -53,5 +53,5 @@
       (http-sendrecv endpoint response-path
                      #:port port
                      #:method "POST"
-                     #:data response))
+                     #:data (jsexpr->string response)))
     (loop)))

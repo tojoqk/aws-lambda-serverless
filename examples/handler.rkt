@@ -2,7 +2,6 @@
 (require json)
 
 (define (hello jsexpr)
-  (jsexpr->string
-   (hash 'hello "Hello, world!"
-         'input jsexpr)))
+  (hash 'hello "Hello, world!"
+        'input jsexpr))
 (provide hello)
